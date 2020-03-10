@@ -1,0 +1,54 @@
+# CMake generation dependency list for this directory.
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/VTK-targets-debug.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/VTK-targets.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/VTK-vtk-module-find-packages.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/VTK-vtk-module-properties.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/patches/99/FindOpenGL.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtk-config-version.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtk-config.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtk-prefix.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtkCMakeBackports.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtkEncodeString.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtkExternalData.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtkHashSource.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtkModule.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtkModuleJson.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtkModuleTesting.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtkObjectFactory.cmake
+C:/Program Files (x86)/VTK1/lib/cmake/vtk-8.90/vtkTopologicalSort.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/ExternalData.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/GenerateExportHeader.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/WindowsPaths.cmake
+C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake
+C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake
+C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/CMakeFiles/3.15.4/CMakeRCCompiler.cmake
+C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/CMakeFiles/3.15.4/CMakeSystem.cmake
+C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/CMakeLists.txt

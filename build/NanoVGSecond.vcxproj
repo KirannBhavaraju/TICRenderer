@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{31E08EA8-F12E-3774-997E-EE5B6EBABB39}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>NanoVGSecond</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NanoVGSecond.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NanoVGSecond</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NanoVGSecond.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NanoVGSecond</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">NanoVGSecond.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">NanoVGSecond</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">NanoVGSecond.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">NanoVGSecond</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Program Files (x86)\VTK1\lib\vtkInteractionImage-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingContextOpenGL2-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingGL2PSOpenGL2-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingOpenGL2-8.90d.lib;external\glfw-3.1\src\Debug\glfw3dll.lib;external\Debug\GLEW_2100_x2.lib;lib\Debug\nanovgd.lib;C:\Program Files (x86)\VTK1\lib\vtkInteractionStyle-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkIOImage-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingContext2D-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingFreeType-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkfreetype-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkzlib-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkFiltersCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonExecutionModel-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkglew-8.90d.lib;opengl32.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonDataModel-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonTransforms-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonMisc-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonMath-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtksys-8.90d.lib;ws2_32.lib;dbghelp.lib;Psapi.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/Debug/NanoVGSecond.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/Debug/NanoVGSecond.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Program Files (x86)\VTK1\lib\vtkInteractionImage-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingContextOpenGL2-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingGL2PSOpenGL2-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingOpenGL2-8.90d.lib;external\glfw-3.1\src\Release\glfw3dll.lib;external\Release\GLEW_2100_x2.lib;lib\Release\nanovg.lib;C:\Program Files (x86)\VTK1\lib\vtkInteractionStyle-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkIOImage-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingContext2D-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingFreeType-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkfreetype-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkzlib-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkFiltersCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonExecutionModel-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkglew-8.90d.lib;opengl32.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonDataModel-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonTransforms-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonMisc-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonMath-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtksys-8.90d.lib;ws2_32.lib;dbghelp.lib;Psapi.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/Release/NanoVGSecond.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/Release/NanoVGSecond.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Program Files (x86)\VTK1\lib\vtkInteractionImage-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingContextOpenGL2-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingGL2PSOpenGL2-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingOpenGL2-8.90d.lib;external\glfw-3.1\src\MinSizeRel\glfw3dll.lib;external\MinSizeRel\GLEW_2100_x2.lib;lib\MinSizeRel\nanovg.lib;C:\Program Files (x86)\VTK1\lib\vtkInteractionStyle-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkIOImage-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingContext2D-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingFreeType-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkfreetype-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkzlib-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkFiltersCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonExecutionModel-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkglew-8.90d.lib;opengl32.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonDataModel-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonTransforms-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonMisc-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonMath-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtksys-8.90d.lib;ws2_32.lib;dbghelp.lib;Psapi.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/MinSizeRel/NanoVGSecond.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/MinSizeRel/NanoVGSecond.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\nanovg\src;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glm-stable;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glew-2.1.0\include;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\.;C:\Program Files (x86)\VTK1\include\vtk-8.90;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Program Files (x86)\VTK1\lib\vtkInteractionImage-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingContextOpenGL2-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingGL2PSOpenGL2-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingOpenGL2-8.90d.lib;external\glfw-3.1\src\RelWithDebInfo\glfw3dll.lib;external\RelWithDebInfo\GLEW_2100_x2.lib;lib\RelWithDebInfo\nanovg.lib;C:\Program Files (x86)\VTK1\lib\vtkInteractionStyle-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkIOImage-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingContext2D-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingFreeType-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkfreetype-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkzlib-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkRenderingCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkFiltersCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonExecutionModel-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkglew-8.90d.lib;opengl32.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonDataModel-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonTransforms-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonMisc-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonMath-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtkCommonCore-8.90d.lib;C:\Program Files (x86)\VTK1\lib\vtksys-8.90d.lib;ws2_32.lib;dbghelp.lib;Psapi.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/RelWithDebInfo/NanoVGSecond.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/RelWithDebInfo/NanoVGSecond.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src" "-BC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build" --check-stamp-file "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-targets-debug.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-targets.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-vtk-module-find-packages.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-vtk-module-properties.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\patches\99\FindOpenGL.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-config-version.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-config.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-prefix.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkCMakeBackports.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkEncodeString.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkExternalData.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkHashSource.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModule.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModuleJson.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModuleTesting.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkObjectFactory.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkTopologicalSort.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeCCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeCXXCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeRCCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src" "-BC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build" --check-stamp-file "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-targets-debug.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-targets.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-vtk-module-find-packages.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-vtk-module-properties.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\patches\99\FindOpenGL.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-config-version.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-config.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-prefix.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkCMakeBackports.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkEncodeString.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkExternalData.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkHashSource.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModule.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModuleJson.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModuleTesting.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkObjectFactory.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkTopologicalSort.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeCCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeCXXCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeRCCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src" "-BC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build" --check-stamp-file "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-targets-debug.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-targets.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-vtk-module-find-packages.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-vtk-module-properties.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\patches\99\FindOpenGL.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-config-version.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-config.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-prefix.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkCMakeBackports.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkEncodeString.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkExternalData.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkHashSource.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModule.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModuleJson.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModuleTesting.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkObjectFactory.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkTopologicalSort.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeCCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeCXXCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeRCCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src" "-BC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build" --check-stamp-file "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-targets-debug.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-targets.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-vtk-module-find-packages.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\VTK-vtk-module-properties.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\patches\99\FindOpenGL.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-config-version.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-config.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtk-prefix.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkCMakeBackports.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkEncodeString.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkExternalData.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkHashSource.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModule.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModuleJson.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkModuleTesting.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkObjectFactory.cmake;C:\Program Files (x86)\VTK1\lib\cmake\vtk-8.90\vtkTopologicalSort.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeCCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeCXXCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeRCCompiler.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\3.15.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\shader.cpp" />
+    <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\shader.hpp" />
+    <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\texture.hpp" />
+    <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\texture.cpp" />
+    <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\demo.h" />
+    <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\demo.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\perf.h" />
+    <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\perf.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\stb_image_write.h" />
+    <None Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\basicShader.ver" />
+    <None Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\basicShader.frag" />
+    <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\NanoVGSecond.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\ZERO_CHECK.vcxproj">
+      <Project>{55D89212-9369-36A1-8A3C-7B72BDCA0190}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\GLEW_2100_x2.vcxproj">
+      <Project>{F4039E29-5E01-3BFA-AD6C-EA8D3065A0A7}</Project>
+      <Name>GLEW_2100_x2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\src\glfw.vcxproj">
+      <Project>{F6E206A0-E25D-3187-9328-8548EED592D7}</Project>
+      <Name>glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\nanovg\nanovg.vcxproj">
+      <Project>{4C9D8C54-BD07-3576-B008-86FC82F38839}</Project>
+      <Name>nanovg</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

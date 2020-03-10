@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\CMakeFiles\cd3867a8aaa1c85dd6f2413a1eb21cbe\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{864504C8-F759-3668-BD16-6082BE12BD75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

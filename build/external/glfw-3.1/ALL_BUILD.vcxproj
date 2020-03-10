@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF7E32EF-014E-376A-A5BC-0D205097EAA8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external/glfw-3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src" "-BC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build" --check-stamp-file "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/external/glfw-3.1/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\cmake_uninstall.cmake.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\docs\Doxyfile.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw3.pc.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw3Config.cmake.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external/glfw-3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src" "-BC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build" --check-stamp-file "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/external/glfw-3.1/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\cmake_uninstall.cmake.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\docs\Doxyfile.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw3.pc.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw3Config.cmake.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external/glfw-3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src" "-BC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build" --check-stamp-file "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/external/glfw-3.1/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\cmake_uninstall.cmake.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\docs\Doxyfile.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw3.pc.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw3Config.cmake.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external/glfw-3.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src" "-BC:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build" --check-stamp-file "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/build/external/glfw-3.1/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\cmake_uninstall.cmake.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\docs\Doxyfile.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw3.pc.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw3Config.cmake.in;C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\external\glfw-3.1\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\ZERO_CHECK.vcxproj">
+      <Project>{55D89212-9369-36A1-8A3C-7B72BDCA0190}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\accuracy.vcxproj">
+      <Project>{82958CE6-7955-315D-A4DF-9C1506A43A17}</Project>
+      <Name>accuracy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\examples\boing.vcxproj">
+      <Project>{2C25196C-781C-3FFD-BE06-2E71A27F4FAC}</Project>
+      <Name>boing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\clipboard.vcxproj">
+      <Project>{60FD3679-0BC5-3415-BDAE-7824543BDB71}</Project>
+      <Name>clipboard</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\cursor.vcxproj">
+      <Project>{D42165A0-EAE8-33E8-93BA-32ACC7F4BADB}</Project>
+      <Name>cursor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\cursoranim.vcxproj">
+      <Project>{E5F5EC63-1C77-3F91-895E-FF74704ED262}</Project>
+      <Name>cursoranim</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\defaults.vcxproj">
+      <Project>{A0F88913-3A10-3A43-B673-315B9288868C}</Project>
+      <Name>defaults</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\empty.vcxproj">
+      <Project>{15F0FBE3-F326-305E-9B23-83313F9A49AE}</Project>
+      <Name>empty</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\events.vcxproj">
+      <Project>{8AB1D861-17A9-31FF-A967-99494D052521}</Project>
+      <Name>events</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\fsaa.vcxproj">
+      <Project>{EA2CE73D-829D-3752-8F7B-4EA106FF0DE7}</Project>
+      <Name>fsaa</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\gamma.vcxproj">
+      <Project>{25813732-88C8-3CE6-A997-62A72896D8CC}</Project>
+      <Name>gamma</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\examples\gears.vcxproj">
+      <Project>{C31554B5-F9EB-3D71-9BF7-5B90CCBD767F}</Project>
+      <Name>gears</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\src\glfw.vcxproj">
+      <Project>{F6E206A0-E25D-3187-9328-8548EED592D7}</Project>
+      <Name>glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\glfwinfo.vcxproj">
+      <Project>{2DAB9E16-CE61-39E8-9E77-DF3AA957FCD8}</Project>
+      <Name>glfwinfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\examples\heightmap.vcxproj">
+      <Project>{EEEC16FB-FF1F-34B3-9124-78FDFEB97408}</Project>
+      <Name>heightmap</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\iconify.vcxproj">
+      <Project>{31BAF272-A2FD-3272-88BC-71A58B56A4C0}</Project>
+      <Name>iconify</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\joysticks.vcxproj">
+      <Project>{3568C044-6218-355E-8D2C-3BA2609BCAEB}</Project>
+      <Name>joysticks</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\modes.vcxproj">
+      <Project>{85EF8504-2894-3163-9090-BBB40ED31E8A}</Project>
+      <Name>modes</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\examples\particles.vcxproj">
+      <Project>{FABA343D-50CD-3F8D-BCD3-17603BAF557F}</Project>
+      <Name>particles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\peter.vcxproj">
+      <Project>{E2DFA575-DB8E-3CB3-A6C3-21122E91C80A}</Project>
+      <Name>peter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\reopen.vcxproj">
+      <Project>{7299DBF7-1F90-3656-8628-2ED3C22F4E99}</Project>
+      <Name>reopen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\sharing.vcxproj">
+      <Project>{0AFFF12A-5C80-3E19-8B96-293054FF701F}</Project>
+      <Name>sharing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\examples\simple.vcxproj">
+      <Project>{C6ABF0E7-55A7-352A-B8B5-C2E92A3D05D0}</Project>
+      <Name>simple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\examples\splitview.vcxproj">
+      <Project>{80729257-774C-3488-A97F-8FE9F2F12BB1}</Project>
+      <Name>splitview</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\tearing.vcxproj">
+      <Project>{CB5B03B1-20F5-32D5-A043-4A0B87F28B6B}</Project>
+      <Name>tearing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\threads.vcxproj">
+      <Project>{3A7CF8C4-D379-3F5B-8C54-ED97421FBA68}</Project>
+      <Name>threads</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\title.vcxproj">
+      <Project>{178386F3-6120-3807-8B3E-D4C306A2B39C}</Project>
+      <Name>title</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\examples\wave.vcxproj">
+      <Project>{902D8C5C-D8D4-3837-AE9F-248E5EEA03BD}</Project>
+      <Name>wave</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\build\external\glfw-3.1\tests\windows.vcxproj">
+      <Project>{E4524A6E-716A-3EE0-8384-2B3FE943A9A2}</Project>
+      <Name>windows</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
