@@ -800,15 +800,12 @@ void drawLines(NVGcontext* vg, float x, float y, float w, float h, float t)
 			nvgStroke(vg);
 		}
 	}
-
-
 	nvgRestore(vg);
 }
 
 int loadDemoData(NVGcontext* vg, DemoData* data)
 {
 	int i;
-
 	if (vg == NULL)
 		return -1;
 	char* cwd = _getcwd(NULL, 0);
@@ -821,7 +818,6 @@ int loadDemoData(NVGcontext* vg, DemoData* data)
 			return -1;
 		}
 	}
-
 	//char *filename = ".\\example\\entypo.ttf";
 	data->fontIcons = nvgCreateFont(vg, "icons", ".\\example\\entypo.ttf");
 	if (data->fontIcons == -1) {

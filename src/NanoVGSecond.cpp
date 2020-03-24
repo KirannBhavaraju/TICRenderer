@@ -1,3 +1,4 @@
+#include "common/TIC.h"
 #include <stdio.h>
 #include <GL/glew.h>
 #ifdef __APPLE__
@@ -13,234 +14,20 @@
 #include "perf.h"
 #include <vector>
 #include <iostream>
-#include <math.h>
-#include <algorithm>
-double mx, my;
+#include<algorithm>
+#include<math.h>
+
+//locally global only to serve callbacks
+Curve one = {};
+Curve two = {};
 
 void errorcb(int error, const char* desc)
 {
 	printf("GLFW error %d: %s\n", error, desc);
 }
 
-int blowup = 0;
-int screenshot = 0;
-int premult = 0;
 
-#define PI 3.141592653;
-typedef struct
-{
-	double x, y, z;
-}Point;
-
-typedef struct
-{
-	double x, y;
-}Point2D;
-
-typedef struct {
-	std::vector<double> x_data;
-	std::vector<double> y_data;
-	NVGcolor color;
-	int id;
-	float thickeness;
-}Curve;
-
-NVGcolor defaultColor;
-float defaultWidth;
-
-Curve one = {};
-Curve two = {};
-
-
-//computes eucledian distance
-//unit tested
-double ComputeDistance(double x1, double y1, double x2,double y2)
-{
-	double square_difference_x = (x2 - x1) * (x2 - x1);
-	double square_difference_y = (y2 - y1) * (y2 - y1);
-	double sum = square_difference_x + square_difference_y;
-	double value = sqrt(sum);
-	return value;
-}
-
-//computes cosine similarity
-//unit tested
-double ComputeSimilarity2D(Point2D p1, Point2D p2)
-{
-	double dotProduct = (p1.x * p2.x) + (p1.y * p2.y);
-	double magnitudep1 = (p1.x * p1.x) + (p1.y * p1.y);
-	double magnitudep2 = (p2.x * p2.x) + (p2.y * p2.y);
-	double radians = (dotProduct / (sqrt(magnitudep1) * sqrt(magnitudep2))) * PI;
-	return cos(radians / 180.0);
-}
-
-//computes cosine similarity
-//unit tested
-double ComputeSimilarity3D(Point p1, Point p2)
-{
-	double dotProduct = (p1.x * p2.x) + (p1.y * p2.y) + (p1.z * p2.z);
-	double magnitudep1 = (p1.x * p1.x) + (p1.y * p1.y) + (p1.z * p1.z);
-	double magnitudep2 = (p2.x * p2.x) + (p2.y * p2.y) + (p2.z * p2.z);
-	double radians = (dotProduct / (sqrt(magnitudep1) * sqrt(magnitudep2))) * PI;
-	return cos(radians / 180.0);
-}
-
-Curve DrawCurve(NVGcontext* vg, GLFWwindow* window)
-{
-	Curve Curve1;
-	return Curve1;
-}
-
-//unit tested
-void GenerateBorders(NVGcontext* vg, float x, float y, float w, float h, NVGcolor color, float Stroke_Width)
-{
-	nvgBeginPath(vg);
-	nvgStrokeColor(vg, color);
-	nvgStrokeWidth(vg, Stroke_Width);
-	nvgRect(vg, x, y, w, h);
-	nvgStroke(vg);
-}
-//unit tested
-void GenerateDefaultBorders(NVGcontext* vg, GLFWwindow* window)
-{
-	int winWidth, winHeight;
-	glfwGetWindowSize(window, &winWidth, &winHeight);
-	nvgBeginPath(vg);
-	nvgStrokeColor(vg, defaultColor);
-	nvgStrokeWidth(vg, defaultWidth);
-	nvgRect(vg, 10, 10, winWidth -20, winHeight - 20);
-	nvgStroke(vg);
-}
-//Not implemented
-void DrawDottedLines(NVGcontext* vg, std::vector<double>* x_data, std::vector<double>* y_data)
-{
-
-}
-//Not implemented
-void DrawDashedLines(NVGcontext* vg, std::vector<double>* x_data, std::vector<double>* y_data)
-{
-
-}
-//Not implemented
-void DrawStepLeftLines(NVGcontext* vg, std::vector<double>* x_data, std::vector<double>* y_data)
-{
-
-}
-//Not implemented
-void DrawStepRightLines(NVGcontext* vg, std::vector<double>* x_data, std::vector<double>* y_data)
-{
-
-}
-//Not implemented
-void DrawStepCentreLines(NVGcontext* vg, std::vector<double>* x_data, std::vector<double>* y_data)
-{
-
-}
-//Not implemented
-void DrawImpulseinX(NVGcontext* vg, std::vector<double>* x_data, std::vector<double>* y_data, float base_x)
-{
-
-}
-//Not implemented
-void DrawImpulseinY(NVGcontext* vg, std::vector<double>* x_data, std::vector<double>* y_data, float base_y)
-{
-
-}
-
-//c represent x axis and h represent y axis
-//unit tested
-void DrawAxes(NVGcontext* vg, Point2D x_start, Point2D x_end, Point2D y_start, Point2D y_end, NVGcolor color, float stroke_width, NVGlineCap lineCap, NVGlineCap lineJoin)
-{
-	nvgBeginPath(vg);
-	nvgStrokeWidth(vg, stroke_width);
-	nvgStrokeColor(vg, color);
-	nvgLineCap(vg, lineCap);
-	nvgLineJoin(vg, lineJoin);
-	nvgMoveTo(vg, x_start.x, x_start.y);
-	nvgLineTo(vg, x_end.x, x_end.y);
-	nvgStroke(vg);
-
-	nvgBeginPath(vg);
-	nvgStrokeWidth(vg, stroke_width);
-	nvgStrokeColor(vg, color);
-	nvgLineCap(vg, lineCap);
-	nvgLineJoin(vg, lineJoin);
-	nvgMoveTo(vg, y_start.x, y_start.y);
-	nvgLineTo(vg, y_end.x, y_end.y);
-	nvgStroke(vg);
-
-}
-//Not implemented
-void DrawBoxAxes(NVGcontext* vg, GLFWwindow* window)
-{
-
-}
-//unit tested
-void PopulateSamplesParabola2D(std::vector<double>* x_data, std::vector<double>* y_data)
-{
-	printf(" \n Populating a 100 sample points for a parabola");
-	for (int i = 0; i < 101; ++i)
-	{
-		double push_point_x = i / 50.0 - 1;
-		double push_point_y = push_point_x * push_point_x;
-		x_data -> push_back(100 * (push_point_x + 2));
-		y_data -> push_back((0.5 * 758 * (push_point_y)) + 10);
-		/*y_data -> push_back(push_point_x);
-		y_data -> push_back(push_point_x * push_point_x);*/
-
-	}
-	printf(" \n Populating Complete");
-}
-//unit tested
-void PopulateSamplesCurve2D(std::vector<double>* x_data, std::vector<double>* y_data)
-{
-	printf(" \n Populating a 100 sample points for a Curve");
-	for (int i = 0; i < 101; ++i)
-	{
-		double push_point_x = i/15.0 * 5 *3.14 + 0.01;
-		double push_point_y = sin(push_point_x) / push_point_x;
-		x_data->push_back(100 * (push_point_x + 2));
-		y_data->push_back((0.5 * 758 * (push_point_y)) + 10);
-	}
-	printf(" \n Populating Complete");
-}
-//unit tested
-void EnableGrid(NVGcontext* vg, GLFWwindow* window,unsigned int scale, NVGcolor color)
-{
-	int winHeight, winWidth;
-	glfwGetWindowSize(window, &winWidth, &winHeight);
-	float step_x = winWidth / scale;
-	float step_y = winHeight / scale;
-	for (int i=0; i<scale; i++)
-	{
-		nvgBeginPath(vg);
-		nvgStrokeWidth(vg, 0.5f);
-		nvgStrokeColor(vg, color);
-		nvgMoveTo(vg, (step_x * i), 0.0);
-		nvgLineTo(vg, (step_x * i), winHeight);
-		nvgStroke(vg);
-
-		nvgBeginPath(vg);
-		nvgStrokeWidth(vg, 0.5f);
-		nvgStrokeColor(vg, color);
-		nvgMoveTo(vg, 0.0 , (step_y * i));
-		nvgLineTo(vg, winWidth, (step_y * i));
-		nvgStroke(vg);
-	}
-
-	for (int i = 0; i < scale; i++)
-	{
-		for (int j = 0; j < scale; j++)
-		{
-			nvgBeginPath(vg);
-			nvgCircle(vg, (step_x * i), (step_y * j), 1.0f);
-			nvgStroke(vg);
-		}
-	}
-
-
-}
-//unit tested
+//callbacks
 static void key(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
 	NVG_NOTUSED(scancode);
@@ -254,12 +41,10 @@ static void key(GLFWwindow* window, int key, int scancode, int action, int mods)
 	if (key == GLFW_KEY_P && action == GLFW_PRESS)
 		premult = !premult;
 }
-//unit tested
 static void cursor_position_callback(GLFWwindow* window, double xpos, double ypos)
 {
 	//printf("%f , %f \n",xpos, ypos);
 }
-//unit tested
 static void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 {
 	NVG_NOTUSED(mods);
@@ -279,7 +64,7 @@ static void mouse_button_callback(GLFWwindow* window, int button, int action, in
 			one.color = nvgRGBA(rand() % 255, rand() % 255, rand() % 255, 255);
 		}
 		//to prevent a negative distance because of curve width being 3.0f
-		else if(floor(lowest_distance_to_two) < 5) {
+		else if (floor(lowest_distance_to_two) < 5) {
 			printf(" \n Curve with id : %p Clicked \n", &two);
 			two.color = nvgRGBA(rand() % 255, rand() % 255, rand() % 255, 255);
 		}
@@ -288,19 +73,19 @@ static void mouse_button_callback(GLFWwindow* window, int button, int action, in
 			printf(" \n No Curve Clicked \n");
 		}
 	}
-		
+
 	if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
 	{
-		double lowest_distance_to_one = 100 , lowest_distance_to_two = 100;
+		double lowest_distance_to_one = 100, lowest_distance_to_two = 100;
 		for (int idx = 0; idx < one.x_data.size(); idx++)
 		{
-			lowest_distance_to_one = std::min(lowest_distance_to_one , ComputeDistance(mx,my,one.x_data[idx],one.y_data[idx]));
-			lowest_distance_to_two = std::min(lowest_distance_to_two , ComputeDistance(mx,my,two.x_data[idx],two.y_data[idx]));
+			lowest_distance_to_one = std::min(lowest_distance_to_one, ComputeDistance(mx, my, one.x_data[idx], one.y_data[idx]));
+			lowest_distance_to_two = std::min(lowest_distance_to_two, ComputeDistance(mx, my, two.x_data[idx], two.y_data[idx]));
 		}
 		if (lowest_distance_to_one < lowest_distance_to_two)
 		{
 			printf(" \n Curve id : %p \n", &one);
-			one.color = nvgRGBA(rand()%255, rand() % 255, rand() % 255, 255);
+			one.color = nvgRGBA(rand() % 255, rand() % 255, rand() % 255, 255);
 		}
 		else {
 			printf("\n Curve id :%p \n", &two);
@@ -308,7 +93,9 @@ static void mouse_button_callback(GLFWwindow* window, int button, int action, in
 		}
 	}
 }
-//example
+
+
+//examples
 void customDrawLinesFromExample(NVGcontext* vg, float x, float y, float w, float h, float t)
 {
 	int i, j;
@@ -362,7 +149,6 @@ void customDrawLinesFromExample(NVGcontext* vg, float x, float y, float w, float
 
 
 }
-//example
 int run_example()
 {
 	GLFWwindow* window;
@@ -501,6 +287,7 @@ int run_example()
 	return 0;
 }
 
+//testing
 int run_test()
 {
 	GLFWwindow* window;
@@ -563,6 +350,7 @@ int run_test()
 	int iteration_Number = 0;
 	while (!glfwWindowShouldClose(window))
 	{
+		
 		defaultColor = nvgRGBA(255,255,255,255);
 		defaultWidth = 3.0f;
 		GenerateDefaultBorders(vg, window); // here
@@ -629,9 +417,9 @@ int run_test()
 	nvgDeleteGL3(vg);
 	glfwTerminate();
 }
-
 int main()
 {
 	//run_example();
+	//print_test();
 	run_test();
 }

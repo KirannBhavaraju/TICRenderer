@@ -1,0 +1,158 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/nanovgd.dll"
+		},
+		{
+			"path" : "lib/nanovgd.lib"
+		},
+		{
+			"path" : "bin/nanovgd.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_compile_options",
+			"set_target_properties",
+			"target_compile_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"nanovg/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 59,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1  "
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-GS-"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "NVG_BUILD"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "VC_EXTRALEAN"
+				},
+				{
+					"define" : "nanovg_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/nanovg/src"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "nanovg::@2975475e0876ceed322f",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "opengl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "glu32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "nanovg",
+	"nameOnDisk" : "nanovgd.dll",
+	"paths" : 
+	{
+		"build" : "nanovg",
+		"source" : "nanovg"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "nanovg/src/nanovg.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

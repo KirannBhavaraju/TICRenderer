@@ -1,0 +1,488 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "NanoVGSecond.exe"
+		},
+		{
+			"path" : "NanoVGSecond.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 45,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1  "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "GLEW_STATIC"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "TW_NO_DIRECT3D"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "TW_NO_LIB_PRAGMA"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "TW_STATIC"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/nanovg/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external/glfw-3.1/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external/glm-stable"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external/glew-2.1.0/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/."
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Program Files (x86)/VTK1/include/vtk-8.90"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				3,
+				5,
+				14
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1  "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "GLEW_STATIC"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "TW_NO_DIRECT3D"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "TW_NO_LIB_PRAGMA"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "TW_STATIC"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/nanovg/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external/glfw-3.1/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external/glm-stable"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external/glew-2.1.0/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/external"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/KirannBhavaraju/Desktop/ISG HIWI/NanoVGSecond/src/."
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Program Files (x86)/VTK1/include/vtk-8.90"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				8,
+				10
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "GLEW_2100_x2::@89556154f30252d09d22"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "glfw::@9b5874a8b9c78eb3b0aa"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "nanovg::@2975475e0876ceed322f"
+		}
+	],
+	"id" : "NanoVGSecond::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "opengl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "glu32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkInteractionImage-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkRenderingContextOpenGL2-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkRenderingGL2PSOpenGL2-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkRenderingOpenGL2-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "external\\glfw-3.1\\src\\glfw3.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "external\\GLEW_2100_x2.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "lib\\nanovgd.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkInteractionStyle-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkIOImage-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkRenderingContext2D-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkRenderingFreeType-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkfreetype-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkzlib-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkRenderingCore-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkFiltersCore-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkCommonExecutionModel-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkglew-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "opengl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkCommonDataModel-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkCommonTransforms-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkCommonMisc-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkCommonMath-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtkCommonCore-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files (x86)\\VTK1\\lib\\vtksys-8.90d.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "dbghelp.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "Psapi.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "opengl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "glu32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "NanoVGSecond",
+	"nameOnDisk" : "NanoVGSecond.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				3,
+				5,
+				8,
+				10,
+				14
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				4,
+				6,
+				7,
+				9,
+				11
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				12,
+				13
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "common/shader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "common/shader.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "common/texture.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "common/texture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "common/TIC.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "common/TIC.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "common/Spline.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "demo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "demo.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "perf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "perf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "stb_image_write.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "basicShader.ver",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "basicShader.frag",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "NanoVGSecond.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

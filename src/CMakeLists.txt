@@ -55,6 +55,9 @@ add_executable(NanoVGSecond
 	common/shader.hpp
 	common/texture.hpp
 	common/texture.cpp
+	common/TIC.h
+	common/TIC.cpp
+	common/Spline.h
 	demo.h
 	demo.c
 	perf.h
