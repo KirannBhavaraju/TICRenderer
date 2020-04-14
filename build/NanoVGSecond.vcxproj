@@ -320,8 +320,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\shader.hpp" />
     <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\texture.hpp" />
     <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\texture.cpp" />
-    <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\TIC.h" />
-    <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\TIC.cpp" />
+    <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\TICPP.h" />
+    <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\TICPP.cpp" />
     <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\Spline.h" />
     <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\demo.h" />
     <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\demo.c">

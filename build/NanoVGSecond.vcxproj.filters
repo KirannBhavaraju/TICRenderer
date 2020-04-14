@@ -7,7 +7,7 @@
     <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\TIC.cpp">
+    <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\TICPP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\demo.c">
@@ -27,7 +27,7 @@
     <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\texture.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\TIC.h">
+    <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\TICPP.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\KirannBhavaraju\Desktop\ISG HIWI\NanoVGSecond\src\common\Spline.h">
