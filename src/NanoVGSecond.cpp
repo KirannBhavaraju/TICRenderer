@@ -17,6 +17,7 @@
 #include<math.h>
 #include "common/Spline.h"
 #include "common/TICPP.h"
+//#include <list>
 using namespace kb;
 
 //locally global only to serve callbacks
@@ -314,7 +315,7 @@ int run_test()
 	glfwSetErrorCallback(errorcb);
 
 	//creating a GL-Window
-	window = glfwCreateWindow(1200, 600, "NanoVG", NULL, NULL);
+	window = glfwCreateWindow(1700, 560, "NanoVG", NULL, NULL);
 	if (!window) {
 		glfwTerminate();
 		return -1;
@@ -322,8 +323,10 @@ int run_test()
 
 	//glfwGetCursorPos(window, &xpos, &ypos);
 	glfwSetKeyCallback(window, key);
-	glfwSetCursorPosCallback(window, cursor_position_callback);
-	glfwSetMouseButtonCallback(window, mouse_button_callback);
+	//glfwSetCursorPosCallback(window, cursor_position_callback);
+	//glfwSetMouseButtonCallback(window, mouse_button_callback);
+	
+	
 	// setting the current context
 
 	glfwMakeContextCurrent(window);
@@ -357,11 +360,9 @@ int run_test()
 		fprintf(stderr, "Could not initialize fonts");
 	}
 
-	one.id = 1;
 	one.color = nvgRGBA(0, 192, 255, 255);
 	one.thickeness = 3.0f;
 
-	two.id = 1;
 	two.color = nvgRGBA(0, 192, 255, 255);
 	two.thickeness = 3.0f;
 
@@ -396,7 +397,7 @@ int run_test()
 	defaultWidth = 1.0f;
 
 	//std::vector<int> valuesforAxis = { 1,1,1,1,1,1,1,1,1,1 };
-	std::vector<std::string> valuesforAxis;
+	std::vector<std::string> valuesforAxis , valuesforAxis1, valuesforAxis2;
 	valuesforAxis.push_back("100");
 	valuesforAxis.push_back("200");
 	valuesforAxis.push_back("300");
@@ -412,24 +413,61 @@ int run_test()
 	kb::Axis x_top;
 	x_top.arrowScale = 5;
 	x_top.axisType = kb::AxisType::X_Top;
-	x_top.isReversed = false;
+	x_top.isReversed = true;
 	x_top.stroke_width = 1.0;
 	x_top.labelMargin = 20;
 	x_top.AxisLabelText = label;
 	x_top.axisvalues = &valuesforAxis;
 	int i = 0;
 
+	char label1[] = "X_Bottom";
+	kb::Axis x_Bottom;
+	x_Bottom.arrowScale = 5;
+	x_Bottom.axisType = kb::AxisType::X_Bottom;
+	x_Bottom.isReversed = true;
+	x_Bottom.stroke_width = 1.0;
+	x_Bottom.labelMargin = 20;
+	x_Bottom.AxisLabelText = label1;
+	x_Bottom.axisvalues = &valuesforAxis1;
+
+	char label3[] = "Y_Left";
 	Axis y_left;
-	y_left.arrowScale = 10;
+	y_left.arrowScale = 5;
 	y_left.axisType = AxisType::Y_Left;
 	y_left.isReversed = true;
-	y_left.stroke_width = defaultWidth;
+	y_left.stroke_width = 1.0;
 	y_left.labelMargin = 10;
-	y_left.AxisLabelText = label;
+	y_left.AxisLabelText = label3;
+	y_left.axisvalues = &valuesforAxis2;
+
+	char label2[] = "Y_Right";
+	Axis Y_Right;
+	Y_Right.arrowScale = 5;
+	Y_Right.axisType = AxisType::Y_Right;
+	Y_Right.isReversed = true;
+	Y_Right.stroke_width = 1.0;
+	Y_Right.labelMargin = 10;
+	Y_Right.AxisLabelText = label2;
+	Y_Right.axisvalues = &valuesforAxis2;
+
+	kb::Graph graphCentre;
+	graphCentre.Background_Color = nvgRGBA(227, 205, 186, 201);
+	graphCentre.position.x = 620;
+	graphCentre.position.y = 50;
+	graphCentre.Grid = true;
+	graphCentre.Borders = true;
+	graphCentre.Grid_Color = nvgRGBA(10, 0, 0, 255);
+	graphCentre.Grid_Scale = 20;
+	graphCentre.Size_X = 460;
+	graphCentre.Size_Y = 460;
+	graphCentre.Label = "Histogram Exp Growth";
+	graphCentre.Border_Label_Padding = 15.0;
+	graphCentre.Border_Padding = 40.0;
+	graphCentre.Label_Position = Position::Centre;
 
 	kb::Graph graphRight;
 	graphRight.Background_Color = nvgRGBA(227, 205, 186, 201);
-	graphRight.position.x = 620;
+	graphRight.position.x = 1170;
 	graphRight.position.y = 50;
 	graphRight.Grid = true;
 	graphRight.Borders = true;
@@ -437,9 +475,10 @@ int run_test()
 	graphRight.Grid_Scale = 20;
 	graphRight.Size_X = 460;
 	graphRight.Size_Y = 460;
-	graphRight.Label = "Example Plotting Graph B";
-	graphRight.Border_Label_Padding = 12.0;
-	graphRight.Border_Padding = 20.0;
+	graphRight.Label = "Plotting Graph Right";
+	graphRight.Border_Label_Padding = 15.0;
+	graphRight.Border_Padding = 40.0;
+	graphRight.Label_Position = Position::Right;
 
 	kb::Graph graphLeft;
 	graphLeft.Background_Color = nvgRGBA(227, 205, 186, 201);
@@ -451,9 +490,23 @@ int run_test()
 	graphLeft.Grid_Scale = 20;
 	graphLeft.Size_X = 460;
 	graphLeft.Size_Y = 460;
-	graphLeft.Label = "Example Plotting Graph A";
-	graphLeft.Border_Label_Padding = 12.0;
-	graphLeft.Border_Padding = 40.0;
+	graphLeft.Label = "Plotting Graph Left";
+	graphLeft.Border_Label_Padding = 15.0;
+	graphLeft.Border_Padding = 40.0; 
+	graphLeft.Label_Position = Position::Right;
+
+	std::vector<double> hist_x, hist_y;
+	for (int i =0; i< 20 ; i++)
+	{
+		valuesforAxis1.push_back(std::to_string(i));
+		hist_x.push_back(i);
+		hist_y.push_back(i*i);
+		valuesforAxis2.push_back(std::to_string(i*19));
+	}
+	Histogram histogram1;
+	histogram1.setData(hist_x, hist_y);
+	histogram1.Bar_Color = nvgRGBA(54,54,54,240);
+	histogram1.Bar_Width = 10;
 
 	//generating data frop left
 	std::vector<double> sample_x, y00, y11;
@@ -483,52 +536,78 @@ int run_test()
 		y4[i] = 0.01 * x4[i] * x4[i] + 1.5 * (rand() / (double)RAND_MAX - 0.5) + 1.5 * PI;
 	}
 
-	std::vector<double> scaledRanges_x, scaledRanges_y00, scaledRanges_y11;
-	temp.MapRanges(&sample_x, *std::min_element(sample_x.begin(), sample_x.end()), *std::max_element(sample_x.begin(), sample_x.end()), &scaledRanges_x, graphLeft.position.x, (graphLeft.position.x + graphLeft.Size_X));
-	temp.MapRanges(&y00, *std::min_element(y00.begin(), y00.end()), *std::max_element(y00.begin(), y00.end()), &scaledRanges_y00, graphLeft.Size_Y + graphLeft.position.y, graphLeft.position.y);
-	temp.MapRanges(&y11, *std::min_element(y11.begin(), y11.end()), *std::max_element(y11.begin(), y11.end()), &scaledRanges_y11, scaledRanges_y00.at(scaledRanges_y00.size() - 1)/*graphLeft.Size_Y + graphLeft.position.y*/, graphLeft.position.y);
-
-	std::vector<double> scaledRanges_x0, scaledRanges_x1, scaledRanges_x2, scaledRanges_x3, scaledRanges_x4;
-	std::vector<double> scaledRanges_y0, scaledRanges_y1, scaledRanges_y2, scaledRanges_y3, scaledRanges_y4;
-	temp.MapRanges(&x0, *std::min_element(x0.begin(), x0.end()), *std::max_element(x0.begin(), x0.end()), &scaledRanges_x0, graphRight.position.x, (graphRight.position.x + graphRight.Size_X));
-	//temp.MapRanges(&x1, *std::min_element(x1.begin(), x1.end()), *std::max_element(x1.begin(), x1.end()), &scaledRanges_x1, graphRight.position.x, (graphRight.position.x + graphRight.Size_X));
-	temp.MapRanges(&x2, *std::min_element(x2.begin(), x2.end()), *std::max_element(x2.begin(), x2.end()), &scaledRanges_x2, graphRight.position.x, (graphRight.position.x + graphRight.Size_X));
-	temp.MapRanges(&x3, *std::min_element(x3.begin(), x3.end()), *std::max_element(x3.begin(), x3.end()), &scaledRanges_x3, graphRight.position.x, (graphRight.position.x + graphRight.Size_X));
-	temp.MapRanges(&x4, *std::min_element(x4.begin(), x4.end()), *std::max_element(x4.begin(), x4.end()), &scaledRanges_x4, graphRight.position.x, (graphRight.position.x + graphRight.Size_X));
-
-	temp.MapRanges(&y0, *std::min_element(y0.begin(), y0.end()), *std::max_element(y0.begin(), y0.end()), &scaledRanges_y0, graphRight.Size_Y + graphRight.position.y, graphRight.position.y);
-	temp.MapRanges(&y4, *std::min_element(y4.begin(), y4.end()), *std::max_element(y4.begin(), y4.end()), &scaledRanges_y4, graphRight.Size_Y + graphRight.position.y, graphRight.position.y);
-	//temp.MapRanges(&y1, *std::min_element(y1.begin(), y1.end()), *std::max_element(y1.begin(), y1.end()), &scaledRanges_y1, graphRight.Size_Y + graphRight.position.y, graphRight.position.y);
-	temp.MapRanges(&y2, *std::min_element(y2.begin(), y2.end()), *std::max_element(y2.begin(), y2.end()), &scaledRanges_y2, graphRight.Size_Y + graphRight.position.y, graphRight.position.y);
-	temp.MapRanges(&y3, *std::min_element(y3.begin(), y3.end()), *std::max_element(y3.begin(), y3.end()), &scaledRanges_y3, graphRight.Size_Y + graphRight.position.y, graphRight.position.y);
+	std::vector<double> line_1_x, line_2_x, line_3_x, line_4_x, line_5_x, line_6_x;
+	std::vector<double> line_1_y, line_2_y, line_3_y, line_4_y, line_5_y, line_6_y;
+	for (int j = 0; j < 150; j++)
+	{
+		line_1_x.push_back(j / 15.0 * 5 * 3.14 + 0.01);
+		line_1_y.push_back(7 * tan(line_1_x[j]) / line_1_x[j]);
+	}
 
 	kb::Curve exponentialDecay;
-	exponentialDecay.x_data = &scaledRanges_x;
-	exponentialDecay.y_data = &scaledRanges_y11;
+	exponentialDecay.x_data = &sample_x;
+	exponentialDecay.y_data = &y11;
+	exponentialDecay.LineType = LineType::Line_Default;
 
 	kb::Curve exponentialDecayCos;
-	exponentialDecayCos.x_data = &scaledRanges_x;
-	exponentialDecayCos.y_data = &scaledRanges_y00;
+	exponentialDecayCos.x_data = &sample_x;
+	exponentialDecayCos.y_data = &y00;
+	exponentialDecayCos.LineType = LineType::Line_Default;
+
+	kb::Curve line_1;
+	line_1.x_data = &line_1_x;
+	line_1.y_data = &line_1_y;
+	line_1.LineType = LineType::Impulse_Line_X_Bottom;
+
+	kb::Curve line_2;
+	line_2.x_data = &line_1_x;
+	line_2.y_data = &line_1_y;
+	line_2.LineType = LineType::Step_Centre_Line;
+	line_2.y_offset = 30.0;
+
+	kb::Curve line_2_1;
+	line_2_1.x_data = &line_1_x;
+	line_2_1.y_data = &line_1_y;
+	line_2_1.LineType = LineType::Step_Left_Line;
+	line_2_1.y_offset = 60.0;
+
+	kb::Curve line_2_2;
+	line_2_2.x_data = &line_1_x;
+	line_2_2.y_data = &line_1_y;
+	line_2_2.LineType = LineType::Step_Right_Line;
+	line_2_2.y_offset = 90.0;
+
+	kb::Curve line_2_3;
+	line_2_3.x_data = &line_1_x;
+	line_2_3.y_data = &line_1_y;
+	line_2_3.LineType = LineType::Line_Default;
+	line_2_3.y_offset = 120.0;
+
+	kb::Curve line_3;
+	line_3.x_data = &line_1_x;
+	line_3.y_data = &line_1_y;
+	line_3.LineType = LineType::Dotted_Line;
+	line_3.y_offset = 150.0;
 
 	kb::Curve x0y0;
-	x0y0.x_data = &scaledRanges_x0;
-	x0y0.y_data = &scaledRanges_y0;
+	x0y0.x_data = &x0;
+	x0y0.y_data = &y0;
 
 	//kb::Curve x1y1;
 	//x1y1.x_data = &scaledRanges_x1;
 	//x1y1.y_data = &scaledRanges_y1;
 
 	kb::Curve x2y2;
-	x2y2.x_data = &scaledRanges_x2;
-	x2y2.y_data = &scaledRanges_y2;
+	x2y2.x_data = &x2;
+	x2y2.y_data = &y2;
 
 	kb::Curve x3y3;
-	x3y3.x_data = &scaledRanges_x3;
-	x3y3.y_data = &scaledRanges_y3;
+	x3y3.x_data = &x3;
+	x3y3.y_data = &y3;
 
 	kb::Curve x4y4;
-	x4y4.x_data = &scaledRanges_x4;
-	x4y4.y_data = &scaledRanges_y4;
+	x4y4.x_data = &x4;
+	x4y4.y_data = &y4;
 
 
 	Point2D start_1 = { 50,30 };
@@ -565,15 +644,33 @@ int run_test()
 			exponentialDecay.color = nvgRGBA(rand() % 101, rand() % 101, rand() % 100, 255);
 			exponentialDecayCos.color = nvgRGBA(rand() % 101, rand() % 101, rand() % 100, 255);
 		}
+		graphLeft.DrawAxes(vg, &x_top);
+		graphLeft.DrawAxes(vg, &Y_Right);
+		graphLeft.DrawAxes(vg, &x_Bottom);
+		graphLeft.DrawAxes(vg, &y_left);
+
 		graphLeft.DrawCurve(vg, &exponentialDecay);
 		graphLeft.DrawCurve(vg, &exponentialDecayCos);
-		graphLeft.DrawAxes(vg, &x_top);
 
 		graphRight.init(vg);
-		//graphRight.DrawCurve(vg, &x0y0);
-		graphRight.DrawCurve(vg, &x2y2);
-		//graphRight.DrawCurve(vg, &x3y3);
-		graphRight.DrawCurve(vg, &x4y4);
+		graphRight.DrawCurve(vg, &line_1);
+		graphRight.DrawCurve(vg, &line_2);
+		graphRight.DrawCurve(vg, &line_2_1);
+		graphRight.DrawCurve(vg, &line_2_2);
+		graphRight.DrawCurve(vg, &line_2_3);
+		graphRight.DrawCurve(vg, &line_3);
+		graphRight.DrawAxes(vg, &x_top);
+
+		graphCentre.init(vg);
+		//graphCentre.DrawCurve(vg, &x0y0);
+		//graphCentre.DrawCurve(vg, &x2y2);
+		//graphCentre.DrawCurve(vg, &x3y3);
+		//graphCentre.DrawCurve(vg, &x4y4);
+		graphCentre.DrawAxes(vg, &y_left);
+		graphCentre.DrawAxes(vg, &x_Bottom);
+
+
+		graphCentre.DrawHistogram(vg, &histogram1);
 
 		nvgEndFrame(vg);
 
@@ -590,8 +687,26 @@ int main()
 {
 	//run_example();
 	//print_test();
+	
 	run_test();
 
-	kb::Point2D newPoint = kb::Point2D(2.9, 3.9);
-	newPoint.ShowPoint();
+	////chutzpah
+	//std::list <int> list1;
+	//list1.push_back(1);
+	//list1.push_back(2);
+	//list1.push_back(3);
+	//std::list <int> list2;
+	//list2 = list1;
+	//list2.push_back(4);
+	//printf("%p , %p \n", list1, list2);
+	//printf("%d \n", *std::max_element(list1.begin(),list1.end()));
+	//printf("%d \n", *std::min_element(list2.begin(), list2.end()));
+	//printf("%d \n", *std::min_element(list2.begin(), list2.end()));
+
+
+	//kb::Point2D newPoint = kb::Point2D(2.9, 3.9);
+	//std::map<int, std::pair<double, double>> test;
+	//test[1] = std::make_pair(2.9, 3.9);
+	//printf("%f , %f", ((*test.find(0)).second).first, ((*test.find(0)).second).second);
+
 }
